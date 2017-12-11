@@ -1,11 +1,6 @@
 
 require_relative "../lib/move.rb"
 #require_relative "./spec_helper.rb"
-
-
-
-
-
 # Commented out 2 test cases jst couldnt figure them out which are as follow
 #F1.Failure/Error: board = get_variable_from_file("./bin/move", "board")
 #     NoMethodError:
@@ -25,9 +20,9 @@ describe './bin/move executing a CLI Application' do
     allow(self).to receive(:gets).and_return("1")
     allow(self).to receive(:move)
 
-  #  board = get_variable_from_file("./bin/move", "board")
+    board = get_variable_from_file("./bin/move", "board")
 
-  #  expect(board).to eq([" ", " ", " ", " ", " ", " ", " ", " ", " "])
+    expect(board).to eq([" ", " ", " ", " ", " ", " ", " ", " ", " "])
   end
 
   it 'prints "Welcome to Tic Tac Toe!"' do
