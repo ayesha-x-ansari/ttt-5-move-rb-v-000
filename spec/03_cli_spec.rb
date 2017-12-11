@@ -1,19 +1,6 @@
 
 require_relative "../lib/move.rb"
-#require_relative "./spec_helper.rb"
-# Commented out 2 test cases jst couldnt figure them out which are as follow
-#F1.Failure/Error: board = get_variable_from_file("./bin/move", "board")
-#     NoMethodError:
-#       undefined method `[]' for nil:NilClass
-# ./lib/move.rb:4:in `display_board'
-# ./spec/spec_helper.rb:26:in `get_variable_from_file'
-# ./spec/spec_helper.rb:13:in `eval'
-# ./spec/spec_helper.rb:13:in `get_variable_from_file'
-# ./spec/03_cli_spec.rb:11:in `block (2 levels) in <top (required)>'
 
-# 2.Failure/Error: run_file("./bin/move")
-#     NoMethodError:
-#       undefined method `[]' for nil:NilClass
 describe './bin/move executing a CLI Application' do
   it 'defines a board variable' do
     allow($stdout).to receive(:puts)
